@@ -38,6 +38,8 @@ import socket
 import itertools
 import random
 
+chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
+
 IPYTHON_WARNING = """
 Note: You must interrupt the kernel to end this command
 """
@@ -122,7 +124,7 @@ def serve_and_open(html, ip='127.0.0.1', port=8888, n_retries=50, files=None,
     sys.stdout.flush()
 
     # Use a thread to open a web browser pointing to the server
-    b = lambda: webbrowser.open('http://{0}:{1}'.format(ip, port))
+    b = lambda: webbrowser.get(chrome_path).open('http://{0}:{1}'.format(ip, port))
     threading.Thread(target=b).start()
 
     try:
