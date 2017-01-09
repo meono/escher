@@ -1,6 +1,10 @@
 Developing with Escher
 ----------------------
 
+If you are interested in developing Escher or just want to try out the source
+code, this is the place to start.  You might also want to check out the the
+`Gitter chat room`_ and the `Development Roadmap`_.
+
 Using the static JavaScript and CSS files
 =========================================
 
@@ -8,22 +12,22 @@ You can include the compiled Escher JavaScript and CSS files in any HTML
 document. The only dependencies are `d3.js`_, and optionally `Twitter
 Bootstrap`_ if you are using the option ``menu='all'``.
 
-The compiled files are available form npmcdn::
+The compiled files are available form unpkg::
 
-  https://npmcdn.com/escher-vis/js/dist/escher.js
-  https://npmcdn.com/escher-vis/js/dist/escher.min.js
-  https://npmcdn.com/escher-vis/css/dist/builder.css
-  https://npmcdn.com/escher-vis/css/dist/builder.min.css
+  https://unpkg.com/escher-vis/js/dist/escher.js
+  https://unpkg.com/escher-vis/js/dist/escher.min.js
+  https://unpkg.com/escher-vis/css/dist/builder.css
+  https://unpkg.com/escher-vis/css/dist/builder.min.css
 
 Source maps are also hosted there::
 
-  https://npmcdn.com/escher-vis/js/dist/escher.js.map
-  https://npmcdn.com/escher-vis/js/dist/escher.min.js.map
-  https://npmcdn.com/escher-vis/css/dist/builder.min.css.map
+  https://unpkg.com/escher-vis/js/dist/escher.js.map
+  https://unpkg.com/escher-vis/js/dist/escher.min.js.map
+  https://unpkg.com/escher-vis/css/dist/builder.min.css.map
 
 If you want a particular version of escher, add a version tag like this::
 
-  https://npmcdn.com/escher-vis@1.4.0-beta.3/js/dist/escher.js
+  https://unpkg.com/escher-vis@1.4.0-beta.3/js/dist/escher.js
 
 For an example of the boilerplate code that is required to begin developing with
 Escher, have a look at the `escher-demo repository`_. For projects built with
@@ -128,6 +132,8 @@ If you are interested in developing with Escher and you need more information
 than what is provided in the documentation, please contact Zachary King
 (zaking-AT-ucsd-DOT-edu).
 
+.. _`Gitter chat room`: https://gitter.im/zakandrewking/escher
+.. _`Development roadmap`: https://github.com/zakandrewking/escher/wiki/Development-Roadmap
 .. _`d3.js`: http://d3js.org/
 .. _`Twitter Bootstrap`: http://getbootstrap.com
 .. _`localhost:7778`: http://localhost:7778
