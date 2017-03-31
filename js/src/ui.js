@@ -1,7 +1,5 @@
 /** ui */
 
-/* global d3 */
-
 var utils = require('./utils');
 var data_styles = require('./data_styles');
 
@@ -14,7 +12,7 @@ module.exports = {
     set_json_or_csv_input_button: set_json_or_csv_input_button
 };
 
-function _button_with_sel(b, button) {
+function _button_with_sel (b, button) {
     var ignore_bootstrap = button.ignore_bootstrap || false
     b.attr('class', 'btn btn-default simple-button')
     // icon
