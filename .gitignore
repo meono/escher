@@ -15,13 +15,12 @@ node_modules/
 .cache/
 *.tar.gz
 *.whl
-.idea.
+.idea/
 
 # built files
 dist/
 js/src/inline.js
 js/src/coverage/
-py/escher/package.json
 py/escher/static/escher/
 py/escher/static/lib/
 py/escher/static/fonts/
