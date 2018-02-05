@@ -11,22 +11,35 @@ _build/
 env/
 commonjs/
 envset/
-node_modules/
 .cache/
 *.tar.gz
 *.whl
+<<<<<<< HEAD
 .idea/
+=======
+.tmp/
+>>>>>>> zakandrewking/master
 
 # built files
 dist/
 js/src/inline.js
+<<<<<<< HEAD
 js/src/coverage/
 py/escher/static/escher/
 py/escher/static/lib/
 py/escher/static/fonts/
 py/escher/static/jsonschema/
+=======
+coverage/
+.nyc_output/
+py/escher/package.json
+>>>>>>> zakandrewking/master
 
 # site files
 1-0-0
 link-site
+
+# npm and yarn
+package-lock.json
+node_modules/
 .yarnclean

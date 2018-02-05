@@ -14,29 +14,40 @@ Bootstrap`_ if you are using the option ``menu='all'``.
 
 The compiled files are available from unpkg::
 
-  https://unpkg.com/escher-vis/js/dist/escher.js
-  https://unpkg.com/escher-vis/js/dist/escher.min.js
-  https://unpkg.com/escher-vis/css/dist/builder.css
-  https://unpkg.com/escher-vis/css/dist/builder.min.css
+  https://unpkg.com/escher/dist/escher.js
+  https://unpkg.com/escher/dist/escher.min.js
 
 Source maps are also hosted there::
 
-  https://unpkg.com/escher-vis/js/dist/escher.js.map
-  https://unpkg.com/escher-vis/js/dist/escher.min.js.map
-  https://unpkg.com/escher-vis/css/dist/builder.min.css.map
+  https://unpkg.com/escher/dist/escher.js.map
+  https://unpkg.com/escher/dist/escher.min.js.map
 
 If you want a particular version of escher, add a version tag like this::
 
-  https://unpkg.com/escher-vis@1.4.0-beta.3/js/dist/escher.js
+  https://unpkg.com/escher@1.7.0-beta.1/dist/escher.js
 
-Or, if you use NPM, you can simply install `escher-vis` -- the name `escher` was
-already taken::
+Or, if you use NPM, you can simply install `escher`::
 
-  npm install --save escher-vis
+  npm install --save escher
+
+Or with yarn::
+
+  yarn add escher
 
 For an example of the boilerplate code that is required to begin developing with
 Escher, have a look at the `escher-demo repository`_. For projects built with
 npm, use the `escher-test repository`_ as a guide.
+
+Import Escher
+=============
+
+The Escher JavaScript file uses UMD_, so you can include it in almost any project.
+
+If you are using JavaScript ES6 import syntax, the default export is Builder::
+
+  import Builder from 'escher'
+  import * as escher from 'escher'
+  console.log(Builder, escher.Builder, escher.libs.preact)
 
 Building and testing Escher
 ===========================
@@ -149,3 +160,4 @@ than what is provided in the documentation, please contact Zachary King
 .. _SchemaVer: http://snowplowanalytics.com/blog/2014/05/13/introducing-schemaver-for-semantic-versioning-of-schemas/
 .. _`core metabolism map`: https://raw.githubusercontent.com/escher/escher.github.io/master/1-0-0/maps/Escherichia%20coli/E%20coli%20core.Core%20metabolism.json
 .. _`core metabolism model`: https://raw.githubusercontent.com/escher/escher.github.io/master/1-0-0/models/Escherichia%20coli/E%20coli%20core.json
+.. _UMD: https://github.com/umdjs/umd

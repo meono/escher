@@ -11,7 +11,8 @@ before_install:
 # Install dependencies
 install:
   - yarn install
-  - yarn bundle
+  - yarn build
+  - yarn copy
   - cd py
   - pip install -U pip
   - pip install swiglpk --only-binary swiglpk
@@ -19,8 +20,8 @@ install:
   - cd ..
 # Run tests
 script:
-  - if [[ $TRAVIS_PYTHON_VERSION = '3.6' ]]; then SCRIPT="coverage"; else SCRIPT="test"; fi
-  - yarn $SCRIPT
+  - yarn test
+  - if [[ $TRAVIS_PYTHON_VERSION = '3.6' ]]; then yarn coverage; fi
   - cd py
   - python setup.py test
   - cd ..
