@@ -1,7 +1,7 @@
 {
   "name": "escher",
   "author": "Zachary King",
-  "version": "1.7.0-alpha",
+  "version": "1.7.0-beta.3",
   "schema_version": "1-0-0",
   "map_model_version": "5",
   "description": "Escher: A Web Application for Building, Sharing, and Embedding Data-Rich Visualizations of Biological Pathways",
@@ -28,10 +28,9 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-register": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "bootswatch": "^3.3.6",
     "chai": "^3.3.0",
     "coveralls": "^3.0.0",
