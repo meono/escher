@@ -113,7 +113,7 @@
   margin-right: 10px
 }
 
-.escher-container .radioSelection .singleLine {
+.escher-container .settingsBox .singleLine {
   display: flex;
 }
 
@@ -151,15 +151,19 @@
 }
 
 .escher-container .selectorTitle {
-  background: white;
+  background-color: white;
   border: 1px solid #a9a9a9;
   padding-left: 4px;
   cursor: default;
   width: 162px;
 }
 
-.escher-container .selectorTitle:hover {
+.escher-container .selectorTitle:hover:not(.disabled) {
   border-color: black;
+}
+
+.escher-container .selectorTitle.disabled {
+  background-color: #f1ecfa;
 }
 
 .escher-container .selectorMenu {
@@ -193,4 +197,8 @@
 .escher-container .settingsBox .icon-sort-down {
   position: absolute;
   top: 0;
+}
+
+.escher-container .settingsBox .tooltipOption {
+  margin-left: 10px;
 }
